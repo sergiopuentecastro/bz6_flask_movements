@@ -3,23 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Movimientos - {% block title%}{% endblock %}</title>
-        <style>
-            header {
-                color: white;
-                background-color: red;
-            }
-        </style>
+        <title>Mi Kakebo - {% block title%}{% endblock %}</title>
     </head>
     <body>
         <header>
-            <p>Boot Z 6 - Cash</p>
+            <p>Boot Z 6 - Kakebo</p>
         </header>
 
         <section>
-            {%block content %}{% endblock %}
-            <h1>Lista de movimientos</h1>
-            <p>Aqui va mi lista de movimientos</p>
+            {% block mi_precioso_bloque_de_formato %}{% endblock %}
         </section>
         
         <footer>

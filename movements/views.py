@@ -3,10 +3,9 @@ from flask import render_template
 
 
 @app.route("/")
-def listaMovimientos():
+def listaIngresos():
+    fIngresos = open(movements/data/basededatos.csv, "r")
+    csvReader = csv.reader(fIngresos, delimiter=",", quotechar="\"")
+    ingresos = list(csvReader)
+    print(ingresos)
     return render_template("movementsList.html", miTexto="Ya veremos si hay movimientos o no")
-
-
-@app.route("/dado")
-def tirado():
-    return render_template("dado.html", tirada=random,)
